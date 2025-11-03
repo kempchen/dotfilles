@@ -1,6 +1,6 @@
 
 # Created by `pipx` on 2025-08-04 13:02:01
-export PATH="$PATH:/Users/kevin.van.kempen/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 alias python=python3
 alias pip=pip3
 # chezmoi
@@ -11,7 +11,7 @@ alias ll='ls -alF'
 alias vim='nvim'
 
 # set docker_host to colima
-export DOCKER_HOST=unix:///Users/kevin.van.kempen/.colima/default/docker.sock
+export DOCKER_HOST=unix://$HOME/.colima/default/docker.sock
 
 # starship
 eval "$(starship init zsh)"
