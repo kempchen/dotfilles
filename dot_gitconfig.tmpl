@@ -1,0 +1,10 @@
+[core]
+        autocrlf = input
+        editor = {{ .git.editor | quote }}
+
+[user]
+	name = {{ .git.name | quote }}
+	email = {{ .git.email | quote }}
+
+[pull]
+        rebase = true
