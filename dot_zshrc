@@ -1,0 +1,35 @@
+
+# Created by `pipx` on 2025-08-04 13:02:01
+export PATH="$PATH:/Users/kevin.van.kempen/.local/bin"
+alias python=python3
+alias pip=pip3
+# chezmoi
+export PATH="$HOME/bin:$PATH"
+
+# aliase
+alias ll='ls -alF'
+alias vim='nvim'
+
+# set docker_host to colima
+export DOCKER_HOST=unix:///Users/kevin.van.kempen/.colima/default/docker.sock
+
+# starship
+eval "$(starship init zsh)"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+# zoxide
+eval "$(zoxide init zsh)"
+
+# EDITOR
+EDITOR="nvim"
+
+# VISUAL
+VISUAL="nvim"
+
+# Alle Dateien aus ~/.config/myconf nachladen
+if [[ -d "$HOME/.config/myconf/rc" ]]; then
+  for f in $HOME/.config/myconf/rc/*(.N); do
+    source "$f"
+  done
+fi

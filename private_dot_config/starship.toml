@@ -1,0 +1,41 @@
+add_newline = true
+
+format = "$python$directory$git_branch$git_status$fill$line_break$character"
+
+right_format = ""
+
+
+# Vollständiger Pfad
+[directory]
+style = "bold blue"
+truncate_to_repo = false  # zeigt den kompletten Pfad
+fish_style_pwd_dir_length = -1
+
+# Git Branch
+[git_branch]
+format = "on [$branch]($style) "
+style = "bold green"
+
+# Git Status
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style)) '
+style = "red"
+
+# Prompt Symbol
+[character]
+success_symbol = "[>](bold green) "
+error_symbol = "[>](bold red) "
+
+# Zeile füllen
+[fill]
+symbol = '-'
+style = 'bold green'
+
+[python]
+format = "[${virtualenv}]($style) - "
+style = "yellow"
+pyenv_prefix = ""
+# Nur anzeigen, wenn wirklich aktiviert:
+detect_extensions = []
+detect_folders = []
+detect_files = []
