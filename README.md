@@ -11,7 +11,7 @@ export PATH="$HOME/bin:$PATH"
 bash
 
 ```
-if [ -d "$HOME/.config/myconf/rc"
+if [ -d "$HOME/.config/myconf/rc" ]; then
   for f in "$HOME/.config/myconf/rc"/*; do
     [ -f "$f" ] && . "$f"
   done
