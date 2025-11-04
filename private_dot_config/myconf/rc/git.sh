@@ -89,3 +89,13 @@ gc() {
     }
   fi
 }
+
+# Git Pull & Merge Main in current branch
+gmm() {
+  CURRENT_BRANCH=$(git branch --show-current)
+  git checkout "main"
+  git pull
+  git checkout "${CURRENT_BRANCH}"
+  git merge main
+}
+
