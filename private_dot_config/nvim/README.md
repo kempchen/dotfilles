@@ -6,6 +6,7 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 ## by Kevin
 
 - Add Toggle Tree `lua/plugins/toggletree.lua`
+- Add Oil `lua/plugins/oil_nvim.lua`
 
 ### Quickstart
 
