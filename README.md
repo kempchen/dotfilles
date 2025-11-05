@@ -12,7 +12,7 @@ bash
 
 ```
 if [ -d "$HOME/.config/myconf/rc" ]; then
-  for f in "$HOME/.config/myconf/rc"/*; do
+  for f in "$HOME/.config/myconf/rc"/*.sh; do
     [ -f "$f" ] && . "$f"
   done
 fi
@@ -22,7 +22,7 @@ zsh
 
 ```
 if [[ -d "$HOME/.config/myconf/rc" ]]; then
-  for f in $HOME/.config/myconf/rc/*(.N); do
+  for f in $HOME/.config/myconf/rc/*.sh(.N); do
     source "$f"
   done
 fi

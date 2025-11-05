@@ -29,7 +29,7 @@ VISUAL="nvim"
 
 # Alle Dateien aus ~/.config/myconf nachladen
 if [[ -d "$HOME/.config/myconf/rc" ]]; then
-  for f in $HOME/.config/myconf/rc/*(.N); do
+  for f in $HOME/.config/myconf/rc/*.sh(.N); do
     source "$f"
   done
 fi
