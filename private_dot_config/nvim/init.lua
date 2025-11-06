@@ -1,7 +1,7 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
--- OIL
+-- Oil
 require("oil").setup({
   keymaps = {
     ["g?"] = { "actions.show_help", mode = "n" },
@@ -24,5 +24,9 @@ require("oil").setup({
   view_options = {
     show_hidden = true,
   },
+  float = {
+    padding = 10,
+  },
 })
 vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
+--- Oil
