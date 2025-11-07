@@ -23,11 +23,19 @@ require("oil").setup({
   },
   view_options = {
     show_hidden = true,
+    natural_order = true,
+  },
+  win_options = {
+    wrap = true,
   },
   float = {
-    max_width = 0.8,
-    max_height = 0.8,
+    padding = 1,
+    max_width = 0.7,
+    max_height = 0.7,
     border = "rounded",
+    win_options = {
+      winblend = 0,
+    },
   },
 })
 vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
