@@ -27,6 +27,7 @@ require("oil").setup({
   float = {
     max_width = 0.8,
     max_height = 0.8,
+    border = "rounded",
   },
 })
 vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
