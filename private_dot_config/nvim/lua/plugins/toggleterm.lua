@@ -3,8 +3,10 @@ return {
   version = "*",
   opts = {
     direction = "float",
+    shading_factor = 80,
     float_opts = {
       border = "rounded",
+      title_pos = "left",
     },
   },
   keys = {
