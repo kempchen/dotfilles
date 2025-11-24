@@ -11,7 +11,7 @@ alias ll='ls -alF'
 alias vim='nvim'
 
 # set docker_host to colima
-export DOCKER_HOST=unix://$HOME/.colima/default/docker.sock
+# export DOCKER_HOST=unix://$HOME/.colima/default/docker.sock
 
 # starship
 eval "$(starship init zsh)"
