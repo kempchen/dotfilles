@@ -2,6 +2,7 @@
 
 # alias
 alias gp='git push'
+alias gpl='git pull'
 
 # Git commit and push to branch
 gcpb() {
@@ -98,4 +99,3 @@ gmm() {
   git checkout "${CURRENT_BRANCH}"
   git merge main
 }
-
