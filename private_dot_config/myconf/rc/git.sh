@@ -80,15 +80,16 @@ gc() {
     fi
 
     if [ -z "$COMMENT" ]; then
-      MSG="$BRANCH"
+      git commit -m "$BRANCH" || {
+        echo "❌ Nichts zu committen."
+        return 1
+      }
     else
-      MSG="$BRANCH: $COMMENT"
+      git commit -m "$BRANCH" -m "$COMMENT" || {
+        echo "❌ Nichts zu committen."
+        return 1
+      }
     fi
-
-    git commit -m "$MSG" || {
-      echo "❌ Nichts zu committen."
-      return 1
-    }
   fi
 }
 
